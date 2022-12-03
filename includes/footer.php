@@ -31,8 +31,6 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
         <div class="col-md-6">
           <h6>Tentang Kami</h6>
           <ul>
-
-        
           <li><a href="page.php?type=aboutus">Tentang Kami</a></li>
             <li><a href="page.php?type=faqs">FAQs</a></li>
             <li><a href="page.php?type=privacy">Privacy</a></li>

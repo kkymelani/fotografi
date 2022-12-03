@@ -66,19 +66,20 @@ error_reporting(0);
 
 
 <!-- Resent Cat-->
-<section class="section-padding gray-bg">
+<!-- <section class="section-padding gray-bg">
   <div class="container">
     <div class="row"> 
       
-      <!-- Nav tabs -->
-      <div class="recent-tab">
+      Nav tabs -->
+      <!-- <div class="recent-tab">
         <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#resentnewcar" role="tab" data-toggle="tab">Gallery</a></li>
+          <li role="presentation" class="active"><a href="gallery.php" role="tab" data-toggle="tab">Gallery</a></li>
+          bisa pasti bisa bisa matii
         </ul>
-      </div>
-      <!-- Recently Listed New Cars -->
+      </div> -->
+      <!-- Recently Listed New Cars
       <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="resentnewcar">
+        <div role="tabpanel" class="tab-pane active" id="resentnewcar"> -->
 
 <?php 
 $sql = "SELECT * FROM galery";
