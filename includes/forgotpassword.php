@@ -1,26 +1,32 @@
 <?php
-session_start();
-error_reporting(0);
-include('includes/config.php');
+$myHost	= "localhost";
+$myUser	= "root";
+$myPass	= "";
+$myDbs	= "db_foto";
+$koneksidb = mysqli_connect( $myHost, $myUser, $myPass, $myDbs);
+if (! $koneksidb) {
+  echo "Failed Connection !";
+}
 
 if(isset($_POST['update']))
   {
 $email=$_POST['email'];
-$mobile=$_POST['mobile'];
+// $mobile=$_POST['mobile'];
 $newpassword=md5($_POST['newpassword']);
-$sql ="SELECT email FROM users WHERE email='$email' and telp='$mobile'";
+$sql ="SELECT email FROM member WHERE email='$email'";
+// and telp='$mobile'
 $query = mysqli_query($koneksidb,$sql);
 $results = mysqli_fetch_array($query);
-if(mysqli_num_rows($query)>0){
-$con="update users set password='$newpassword' where email='$email' and telp='$mobile'";
-$querycon = mysqli_query($koneksidb,$con);
-echo "<script>alert('Your Password succesfully changed');</script>";
-}
+if(mysqli_num_rows($query)==1){
+  $con="UPDATE member SET password='$newpassword' WHERE email='$email'";
+  // and telp='$mobile'
+  $querycon = mysqli_query($koneksidb,$con);
+  echo "<script>alert('Your Password succesfully changed');</script>";
+  }
 else {
-echo "<script>alert('Email / Telepon is invalid');</script>"; 
+  echo "<script>alert('Email / Telepon is invalid');</script>";
+  }
 }
-}
-
 ?>
 
 <script type="text/javascript">
@@ -52,9 +58,9 @@ return true;
                 <div class="form-group">
                   <input type="email" name="email" class="form-control" placeholder="Your Email address*" required="">
                 </div>
-				<div class="form-group">
+				<!-- <div class="form-group">
                   <input type="number" min="0" name="mobile" class="form-control" placeholder="Your Reg. Phone Number*" required="">
-                </div>
+                </div> -->
 				<div class="form-group">
                   <input type="password" name="newpassword" class="form-control" placeholder="New Password*" required="">
                 </div>

@@ -23,14 +23,23 @@ if(isset($_POST['submit'])){
 	$stt = "Menunggu Pembayaran";
 	$trx = date('dmYHis');
 
-	$sql 	= "INSERT INTO transaksi (id_trx,email,id_paket,tgl_trx,stt_trx,tgl_take,jam_take,catatan)
-			   VALUES('$trx','$email','$id','$tglnow','$stt','$fromdate','$jam','$cat')";
-	$query 	= mysqli_query($koneksidb,$sql);
-	if($query){
-		echo " <script> alert ('Transaksi Berhasil.'); </script> ";
-		echo "<script type='text/javascript'> document.location = 'riwayatsewa.php'; </script>";
+	// Check if there is a conflict with other booking's schedule
+	$sql ="SELECT COUNT(*) FROM transaksi WHERE jam_take='$jam'";
+	$query = mysqli_query($koneksidb,$sql);
+	$results = mysqli_fetch_array($query);
+	if(mysqli_num_rows($query)==0){
+		$sqlcon 	= "INSERT INTO transaksi (id_trx,email,id_paket,tgl_trx,stt_trx,tgl_take,jam_take,catatan)
+				VALUES('$trx','$email','$id','$tglnow','$stt','$fromdate','$jam','$cat')";
+		$querycon 	= mysqli_query($koneksidb,$sqlcon);
+		if($querycon){
+			echo " <script> alert ('Transaksi Berhasil.'); </script> ";
+			echo "<script type='text/javascript'> document.location = 'riwayatsewa.php'; </script>";
+		}else{
+			echo " <script> alert ('Ooops, terjadi kesalahan. Silahkan coba lagi.'); </script> ";
+			echo "<script type='text/javascript'> document.location = 'booking.php?id=$id'; </script>";
+		}
 	}else{
-		echo " <script> alert ('Ooops, terjadi kesalahan. Silahkan coba lagi.'); </script> ";
+		echo " <script> alert ('Ooops, sudah ada booking lain dijadwal yang kamu pilih. Silahkan pilih waktu lain.'); </script> ";
 		echo "<script type='text/javascript'> document.location = 'booking.php?id=$id'; </script>";
 	}
 }
