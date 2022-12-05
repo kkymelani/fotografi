@@ -3,18 +3,14 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-3 col-md-3">
-          <div class="logo"><a href="index.php"><img src="admin/img/logo.png" width="100px" height="60px" alt="image"/></a> </div>
+          <div class="logo"><a href="index.php"><img src="admin/img/logolav.png" width="145px" height="40px" alt="image"/></a> </div>
         </div>
         <div class="col-sm-8 col-md-8">
           <div class="header_info">
-            <div class="header_widgets">
-              <div class="circle_icon"> <i class="fa fa-envelope" aria-hidden="true"></i> </div>
-              <p class="uppercase_text">E-mail : </p>
-              <a href="mailto:ask@menaratnt.com">ask@tukangfoto.com</a> </div>
-            <div class="header_widgets">
-              <div class="circle_icon"> <i class="fa fa-phone" aria-hidden="true"></i> </div>
+            <!-- <div class="header_widgets">
+              <div> <i class="fa fa-phone" aria-hidden="true"></i> </div>
               <p class="uppercase_text">Telp : </p>
-              <a href="tel:+62812-3636-6860">+62 823-2275-3411</a> </div>
+              <a href="tel:+62812-3636-6860">+62 823-2275-3411</a> </div> -->
 			<?php   if(strlen($_SESSION['ulogin'])==0)
 			{	
 			?>
@@ -67,10 +63,9 @@ while($results = mysqli_fetch_array($query))
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="nav navbar-nav">
 		  <li><a href="index.php">Home</a></li>
-          <li><a href="paket.php">Daftar Paket</a></li>
+          <li><a href="paket.php">Package</a></li>
           <li><a href="page.php?type=faqs">FAQs</a></li>
-          <li><a href="page.php?type=aboutus">Tentang Kami</a></li>
-          <li><a href="contact-us.php">Hubungi Kami</a></li>
+          <li><a href="page.php?type=aboutus">About Us</a></li>
         </ul>
       </div>
     </div>

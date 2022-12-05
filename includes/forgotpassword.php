@@ -82,3 +82,7 @@ return true;
     </div>
   </div>
 </div>
+
+<!--Login-Form -->
+<?php include('includes/login.php');?>
+<!--/Login-Form --> 

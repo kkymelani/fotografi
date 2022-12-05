@@ -80,8 +80,8 @@ error_reporting(0);
 				<h6><a href="paket_detail.php?id=<?php echo htmlentities($results['id_paket']);?>" align='center'><?php echo htmlentities($results['nama_paket']);?></a></h6>
 				<span class="price"><?php echo htmlentities(format_rupiah($results['harga']));?> /Pack</span> 
 			</div>
-		<div class="inventory_info_m">
-			<p><?php echo substr($results['ket_paket'],0,70);?></p>
+		<div class="inventory_info_m" >
+			<p style="white-space: pre-wrap;"><?php echo substr($results['ket_paket'],0,70);?></p>
 		</div>
 		</div>
 	</div>

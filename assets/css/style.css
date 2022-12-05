@@ -2268,9 +2268,9 @@ form .slider.slider-horizontal {
   position: relative;
 }
 .page-header_wrap {
-  padding:60px 0;
-  position:relative;	
-  text-align:center;
+  padding: 60px 0;
+  position: relative;
+  text-align: center;
 }
 .page-heading {
   z-index:1;
@@ -2732,8 +2732,8 @@ table.info-tabel tr td {
   text-align: right;
 }
 .listing_detail_head .price_info p {
-	font-size:40px;
-	font-weight:900;
+  font-size: 30px;
+  font-weight: 900;
 }
 .listing_detail_head .price_info .old_price {
 	color:#222;

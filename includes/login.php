@@ -49,8 +49,7 @@ if(mysqli_num_rows($query)>0){
       </div>
       <div class="modal-footer text-center">
         <p>Belum punya akun? <a href="regist.php">Daftar Disini</a></p>
-        <p>Lupa Password? <a href="includes/forgotpassword.php">Klik disini</a></p>
-        <br><center><p>Repost by <a href='https://stokcoding.com/' title='StokCoding.com' target='_blank'>StokCoding.com</a></p></center>
+        <p>Lupa Password? <a href="#forgotpassword" data-toggle="modal" data-dismiss="modal">Klik disini</a></p>
         
       </div>
     </div>

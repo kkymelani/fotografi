@@ -98,7 +98,7 @@ while($result = mysqli_fetch_array($query))
             <div class="tab-content"> 
               <!-- vehicle-overview -->
               <div role="tabpanel" class="tab-pane active" id="vehicle-overview">                
-                <p><?php echo htmlentities($result['ket_paket']);?></p>
+                <p style="white-space: pre-wrap;"><?php echo htmlentities($result['ket_paket']);?></p>
               </div>
             </div>
           </div>
@@ -126,9 +126,6 @@ while($result = mysqli_fetch_array($query))
 
               <?php } ?>
           </form>
-        </div>
-		<div class="share_vehicle">
-          <p>Share: <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a> </p>
         </div>
               </aside>
       <!--/Side-Bar--> 

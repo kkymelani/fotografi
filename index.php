@@ -117,6 +117,8 @@ while($results = mysqli_fetch_array($query))
 <?php include('includes/login.php');?>
 <!--/Login-Form --> 
 
+<?php include('includes/forgotpassword.php');?>
+
 <!--Register-Form -->
 <?php include('includes/registration.php');?>
 
