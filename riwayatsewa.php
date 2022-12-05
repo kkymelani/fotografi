@@ -119,8 +119,11 @@ $tglhasil = date("Y-m-d",$tgl);
 					}else{
 					?>
 					<a href="booking_detail.php?kode=<?php echo $result['id_trx'];?>" class="btn btn-warning btn-xs">Detail</a>
-					<a href="booking_edit.php?kode=<?php echo $result['id_trx'];?>" class="btn btn-primary btn-xs">Upload Bukti</a>
-					<?php }?>
+					<?php
+						if($result['stt_trx']=='Menunggu Pembayaran'){
+							echo "<a href='booking_edit.php?kode=".$result['id_trx']."' class='btn btn-primary btn-xs'>Upload Bukti</a>";
+						}
+					}?>
 				</td>
 			</tr>
 		<?php } ?>
