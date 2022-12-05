@@ -24,7 +24,7 @@ if(isset($_POST['submit'])){
 	$trx = date('dmYHis');
 
 	// Check if there is a conflict with other booking's schedule
-	$sql ="SELECT COUNT(*) FROM transaksi WHERE jam_take='$jam'";
+	$sql ="SELECT id_trx FROM transaksi WHERE jam_take='$jam'";
 	$query = mysqli_query($koneksidb,$sql);
 	$results = mysqli_fetch_array($query);
 	if(mysqli_num_rows($query)==0){
