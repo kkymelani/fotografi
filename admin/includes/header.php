@@ -1,5 +1,6 @@
 <div class="brand clearfix">
-	<a href="dashboard.php" style="font-size: 20px;"><img src="img/newicon.jpg" width="250px" height="60px"></a>  
+	<a href="dashboard.php" style="font-size: 20px; padding-left: 20px; top: 5px;
+    position: relative;"><img src="img/whitenons.png" width="200px" height="50px"></a>  
 		<span class="menu-btn"><i class="fa fa-bars"></i></span>
 		<ul class="ts-profile-nav">
             <?php
@@ -12,7 +13,7 @@
 			?>
 			<li class="ts-account">
 				<a href="#">
-				<img src="img/<?php echo $img;?>" width="20px" height="20px" padding="0px">&nbsp;
+				<img src="img/admin.png" width="20px" height="20px" padding="0px">&nbsp;
 				<?php echo $nama; ?> 
                 <span class="fa fa-angle-down"></span>
 				</a>
