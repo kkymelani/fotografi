@@ -34,11 +34,23 @@ if(isset($_POST['submit'])){
 		$sqlcon 	= "INSERT INTO transaksi (id_trx,email,id_paket,stt_trx,tgl_take,jam_take,catatan)
 				VALUES('$trx','$email','$id','$stt','$fromdate','$jam','$cat')";
 		$querycon 	= mysqli_query($koneksidb,$sqlcon);
-		if($querycon){
+		// timer for the payment of the current booking
+		$timername = "'$trx'";
+		$sqlfinal	= "CREATE EVENT db_foto.payment_check" . $trx .
+				" ON SCHEDULE AT CURRENT_TIMESTAMP + INTERVAL 1 DAY
+				DO
+		  		UPDATE transaksi SET stt_trx = 'Dibatalkan'
+				WHERE SUBDATE(tgl_trx, -1) <= now() AND stt_trx = 'Menunggu Pembayaran' AND id_trx = '$trx'";
+		// $prep = mysqli_prepare($koneksidb,$queryfinal);
+		// mysqli_stmt_bind_param($prep,$trx,$trx);
+		// mysqli_stmt_execute($stmt);
+		// $prep->bind_param($trx, $trx);
+		$queryfinal	= mysqli_query($koneksidb,$sqlfinal);
+		if($querycon and $queryfinal){
 			echo " <script> alert ('Transaksi Berhasil.'); </script> ";
 			echo "<script type='text/javascript'> document.location = 'riwayatsewa.php'; </script>";
 		}else{
-			echo " <script> alert ('Ooops, terjadi kesalahan. Silahkan coba lagi.'); </script> ";
+			echo " <script> alert ('Ooops, terjadi kesalahan. Silahkan coba lagi. ".mysqli_error($koneksidb)."'); </script> ";
 			echo "<script type='text/javascript'> document.location = 'booking.php?id=$id'; </script>";
 		}
 	}else{
