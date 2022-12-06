@@ -15,7 +15,7 @@ if(strlen($_SESSION['ulogin'])==0){
 
 if(isset($_POST['submit'])){
 	$fromdate=$_POST['fromdate'];
-	// $tglnow   = date('Y-m-d');
+	$tglnow   = date('Y-m-d');
 	$id=$_POST['id'];
 	$jam=$_POST['jam'];
 	$cat=$_POST['catatan'];
@@ -24,15 +24,12 @@ if(isset($_POST['submit'])){
 	$trx = date('dmYHis');
 
 	// Check if there is a conflict with other booking's schedule
-	// $sql ="SELECT id_trx FROM transaksi WHERE jam_take='$jam'";
-	$sql ="SELECT id_trx FROM transaksi WHERE DATE_FORMAT(tgl_take, '%Y-%m-%d')='$fromdate'";
+	$sql ="SELECT id_trx FROM transaksi WHERE jam_take='$jam'";
 	$query = mysqli_query($koneksidb,$sql);
 	$results = mysqli_fetch_array($query);
 	if(mysqli_num_rows($query)==0){
-		// $sqlcon 	= "INSERT INTO transaksi (id_trx,email,id_paket,tgl_trx,stt_trx,tgl_take,jam_take,catatan)
-		// 		VALUES('$trx','$email','$id','$tglnow','$stt','$fromdate','$jam','$cat')";
-		$sqlcon 	= "INSERT INTO transaksi (id_trx,email,id_paket,stt_trx,tgl_take,jam_take,catatan)
-				VALUES('$trx','$email','$id','$stt','$fromdate','$jam','$cat')";
+		$sqlcon 	= "INSERT INTO transaksi (id_trx,email,id_paket,tgl_trx,stt_trx,tgl_take,jam_take,catatan)
+				VALUES('$trx','$email','$id','$tglnow','$stt','$fromdate','$jam','$cat')";
 		$querycon 	= mysqli_query($koneksidb,$sqlcon);
 		// timer for the payment of the current booking
 		$timername = "'$trx'";
