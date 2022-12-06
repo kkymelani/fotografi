@@ -64,47 +64,6 @@ error_reporting(0);
 </section>
 <!-- /Banners --> 
 
-
-<!-- Resent Cat-->
-<!-- <section class="section-padding gray-bg">
-  <div class="container">
-    <div class="row"> 
-      
-      Nav tabs -->
-      <!-- <div class="recent-tab">
-        <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="gallery.php" role="tab" data-toggle="tab">Gallery</a></li>
-          bisa pasti bisa bisa matii
-        </ul>
-      </div> -->
-      <!-- Recently Listed New Cars
-      <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="resentnewcar"> -->
-
-<?php 
-$sql = "SELECT * FROM galery";
-$query = mysqli_query($koneksidb,$sql);
-if(mysqli_num_rows($query)>0)
-{
-while($results = mysqli_fetch_array($query))
-{
-
-?>  
-
-<div class="col-list-3">
-	<div class="recent-car-list">
-		<div class="car-info-box"><img src="admin/gallery/<?php echo htmlentities($results['foto_galery']);?>" class="img-responsive" alt="image"></div>
-	</div>
-</div>
-<?php }}?>
-       
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /Resent Cat --> 
-
-
 <!--Footer -->
 <?php include('includes/footer.php');?>
 <!-- /Footer--> 
