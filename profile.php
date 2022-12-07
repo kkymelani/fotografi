@@ -152,7 +152,7 @@ while($result=mysqli_fetch_array($query)){
 </section>
 <!--/Profile-setting--> 
 
-<<!--Footer -->
+<!--Footer -->
 <?php include('includes/footer.php');?>
 <!-- /Footer--> 
 

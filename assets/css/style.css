@@ -675,6 +675,7 @@ table thead th, table thead td {
 }
 .section-padding {
   padding: 110px 0;
+  background-color: #eeeeee;
 }
 .section-header {
   padding-bottom: 55px;
@@ -789,6 +790,7 @@ table thead th, table thead td {
 .header_info {
   float: right;
   text-align: right;
+  color: #f5f5f5;
 }
 .social-follow {
   display: inline-block;
@@ -5337,6 +5339,7 @@ h5 {
 }
 .section-padding {
   padding: 100px 0;
+  color: #eeeeee;
 }
 .faq_category {
   padding: 40px 20px;

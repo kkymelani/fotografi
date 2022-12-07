@@ -131,10 +131,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 												<div class="col-sm-4">
 													<select name="menu1" class="form-control" onChange="MM_jumpMenu('parent',this,0)">
 													  <option value="" selected="selected" class="form-control">***Pilih Halaman***</option>
-													  <option value="manage-pages.php?type=terms">Terms and Conditions</option>
-													  <option value="manage-pages.php?type=privacy">Privacy and Policy</option>
-													  <option value="manage-pages.php?type=aboutus">About Us</option> 
-													  <option value="manage-pages.php?type=faqs">FAQs</option>
+													  <option value="manage-pages.php?type=aboutus">About Us</option>
 													  <option value="manage-pages.php?type=rekening">Rekening</option>
 													</select>
 												</div>
@@ -147,17 +144,8 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 												<?php
 												switch($_GET['type'])
 												{
-													case "terms" :
-														echo "<input type='text' class='form-control' value='Terms and Conditions' readonly>";
-														break;
-													case "privacy" :
-														echo "<input type='text' class='form-control' value='Privacy And Policy' readonly>";
-														break;
 													case "aboutus" :
 														echo "<input type='text' class='form-control' value='About US' readonly>";
-														break;
-													case "faqs" :
-														echo "<input type='text' class='form-control' value='FAQs' readonly>";
 														break;
 													case "rekening" :
 														echo "<input type='text' class='form-control' value='Rekening' readonly>";
