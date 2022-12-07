@@ -99,6 +99,7 @@ header('location:index.php');
 															echo "<option value='$stt' selected>".$stt."</option>";
 															echo "<option value='Menunggu Pembayaran'>"."Menunggu Pembayaran"."</option>";
 															echo "<option value='Sudah Dibayar'>"."Sudah Dibayar"."</option>";
+															echo "<option value='Dibatalkan'>"."Dibatalkan"."</option>";
 														?>
 												</select>
 											</div>

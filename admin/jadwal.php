@@ -69,11 +69,11 @@ else{
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2 class="page-title">Jadwal Hari Ini</h2>
+						<h2 class="page-title">Jadwal Bulan Ini</h2>
 						
 						<!-- Zero Configuration Table -->
 						<div class="panel panel-default">
-							<div class="panel-heading">Daftar Jadwal Pengambilan Foto Hari Ini</div>
+							<div class="panel-heading">Daftar Jadwal Pengambilan Foto Bulan Ini</div>
 							<div class="panel-body">
 							<div class = "table-responsive">
 								<table id="zctb" class="display table table-striped table-bordered table-hover" cellspacing="0" width="100%">
@@ -94,10 +94,12 @@ else{
 									<?php
 										$i=0;
 										$now = date('Y-m-d');
+										$tglawal = date('Y-m-01');
+										$tglakhir = date('Y-m-t');
 										$sqlsewa = "SELECT transaksi.*,paket.*,member.* FROM transaksi, paket, member 
 													WHERE transaksi.id_paket=paket.id_paket AND transaksi.email=member.email 
 													AND transaksi.stt_trx='Sudah Dibayar'
-													AND tgl_take ='$now'
+													AND tgl_take >= '$tglawal' AND tgl_take <= '$tglakhir'
 													ORDER BY transaksi.id_trx DESC";
 										$querysewa = mysqli_query($koneksidb,$sqlsewa);
 										while ($result = mysqli_fetch_array($querysewa)) {
