@@ -53,30 +53,13 @@ error_reporting(0);
             <h1>Painting Your Moments.</h1>
             <p>Story tells about combined room, time and to human in one line of moment which pouring there expressions to the lens.</p>
             <p>Lets change our perspective.</p>
-            <a href="paket.php" class="btn">Book with Us! <span class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a> </div>
+            <a href="paket.php" class="btn">Book Now! <span class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a> </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- /Banners --> 
-
-
-<!-- Resent Cat-->
-<!-- <section class="section-padding gray-bg">
-  <div class="container">
-    <div class="row"> 
-      
-      Nav tabs -->
-      <!-- <div class="recent-tab">
-        <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="gallery.php" role="tab" data-toggle="tab">Gallery</a></li>
-          bisa pasti bisa bisa matii
-        </ul>
-      </div> -->
-      <!-- Recently Listed New Cars
-      <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="resentnewcar"> -->
 
 <?php 
 $sql = "SELECT * FROM galery";
@@ -116,7 +99,6 @@ while($results = mysqli_fetch_array($query))
 
 <!--Register-Form -->
 <?php include('includes/registration.php');?>
-
 <!--/Register-Form --> 
 
 <!--Forgot-password-Form -->
@@ -136,6 +118,4 @@ while($results = mysqli_fetch_array($query))
 <script src="assets/js/owl.carousel.min.js"></script>
 
 </body>
-
-<!-- Mirrored from themes.webmasterdriver.net/carforyou/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Jun 2017 07:22:11 GMT -->
 </html>

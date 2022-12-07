@@ -70,7 +70,7 @@ else{
 													<div class="stat-panel-title text-uppercase">Menunggu Pembayaran</div>
 												</div>
 											</div>
-											<a href="trx_bayar.php" class="block-anchor panel-footer text-center">Rincian &nbsp; <i class="fa fa-arrow-right"></i></a>
+											<a href="trx_bayar.php" class="block-anchor panel-footer text-center">Detail &nbsp; <i class="fa fa-chevron-circle-right"></i></a>
 										</div>
 									</div>
 									
@@ -87,7 +87,7 @@ else{
 													<div class="stat-panel-title text-uppercase">Menunggu Konfirmasi</div>
 												</div>
 											</div>
-											<a href="trx_konfirmasi.php" class="block-anchor panel-footer text-center">Rincian &nbsp; <i class="fa fa-arrow-right"></i></a>
+											<a href="trx_konfirmasi.php" class="block-anchor panel-footer text-center">Detail &nbsp; <i class="fa fa-chevron-circle-right"></i></a>
 										</div>
 									</div>
 									
@@ -103,10 +103,10 @@ else{
 												$paket=mysqli_num_rows($querypaket);
 												?>
 													<div class="stat-panel-number h1 "><?php echo htmlentities($paket);?></div>
-													<div class="stat-panel-title text-uppercase">Jadwal Hari Ini</div>
+													<div class="stat-panel-title text-uppercase">Jadwal Pemotretan</div>
 												</div>
 											</div>
-											<a href="jadwal.php" class="block-anchor panel-footer text-center">Rincian &nbsp; <i class="fa fa-arrow-right"></i></a>
+											<a href="jadwal.php" class="block-anchor panel-footer text-center">Detail &nbsp; <i class="fa fa-chevron-circle-right"></i></a>
 										</div>
 									</div>
 								</div>
@@ -118,15 +118,6 @@ else{
 						</div>
 					</div>
 				</div>
-
-
-
-
-
-
-
-
-
 			</div>
 		</div>
 	</div>
