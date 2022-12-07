@@ -127,9 +127,6 @@ while($result = mysqli_fetch_array($query))
               <?php } ?>
           </form>
         </div>
-		<div class="share_vehicle">
-          <p>Share: <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a> </p>
-        </div>
               </aside>
       <!--/Side-Bar--> 
     </div>
