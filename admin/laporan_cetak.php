@@ -57,7 +57,7 @@ $querysewa = mysqli_query($koneksidb,$sqlsewa);
 						<td rowspan="3" width="16%">&nbsp;</td>
 					</tr>
 					<tr>
-						<td class="text-center">Whatsapp: +62 823-2275-3411</td>
+						<td class="text-center">Whatsapp: +62 813-7496-7174</td>
 					</tr>
 					<tr>
 						<td class="text-center">Pekanbaru</td>

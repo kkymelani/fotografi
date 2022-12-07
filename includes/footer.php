@@ -44,8 +44,8 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
         <div class="col-md-6 col-md-push-6 text-right">
           <div class="footer_widget">
             <ul>
-              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.instagram.com/lavienpicture/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="https://api.whatsapp.com/message/KFZXVFX4O7RIO1?autoload=1&app_absent=0"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
             </ul>
           </div>
         </div>
