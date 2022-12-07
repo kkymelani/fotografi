@@ -905,6 +905,7 @@ table thead th, table thead td {
 	margin:0px;
 }
 .user_login ul li {
+  background-color: #000;
   line-height: 17px;
   list-style: outside none none;
   margin: 0;
