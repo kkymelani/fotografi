@@ -37,11 +37,7 @@ error_reporting(0);
 <link rel="shortcut icon" href="admin/img/fav.png">
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> 
 </head>
-<body>
-
-<!-- Start Switcher -->
-<?php include('includes/colorswitcher.php');?>
-<!-- /Switcher -->  
+<body>  
         
 <!--Header-->
 <?php include('includes/header.php');?>
@@ -54,9 +50,10 @@ error_reporting(0);
       <div class="row">
         <div class="col-md-5 col-md-push-7">
           <div class="banner_content">
-            <h1>Abadikan semua momen indah anda.</h1>
-            <p>Kami membantu anda dalam mengabadikan setiap momen yang tak terlupakan. </p>
-            <a href="paket.php" class="btn">Selengkapnya <span class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a> </div>
+            <h1>Painting Your Moments.</h1>
+            <p>Story tells about combined room, time and to human in one line of moment which pouring there expressions to the lens.</p>
+            <p>Lets change our perspective.</p>
+            <a href="paket.php" class="btn">Book with Us! <span class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a> </div>
         </div>
       </div>
     </div>

@@ -1064,7 +1064,7 @@ nav.navbar {
 	3.1. Banner
 -------------------------------*/
 .banner-section {
-  background-image: url("../images/banner-lav.jpg");
+  background-image: url("../images/bannerlav.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3630,7 +3630,12 @@ table.info-tabel tr td {
 	background-image:url(../images/profile-page-header-img.jpg);
 }
 .inner_pages {
-	padding:80px 0;
+  background-image: url("../images/lavbw.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 160px 0;
+  position: relative;
 }
 .user_profile_info {
 	margin:0 auto 45px;	
