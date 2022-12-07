@@ -2,28 +2,20 @@
   <div class="default-header">
     <div class="container">
       <div class="row">
-        <div class="col-sm-3 col-md-3">
-          <div class="logo"><a href="index.php"><img src="admin/img/logolavien.png" width="100px" height="60px" alt="image"/></a> </div>
+        <div class="col-sm-4 col-md-4">
+          <div class="logo"><a href="index.php"><img src="admin/img/logoputih.png" width="175px" height="50px" alt="image"/></a> </div>
         </div>
         <div class="col-sm-8 col-md-8">
           <div class="header_info">
-            <div class="header_widgets">
-              <div class="circle_icon"> <i class="fa fa-envelope" aria-hidden="true"></i> </div>
-              <p class="uppercase_text">E-mail : </p>
-              <a href="mailto:ask@menaratnt.com">ask@tukangfoto.com</a> </div>
-            <div class="header_widgets">
-              <div class="circle_icon"> <i class="fa fa-phone" aria-hidden="true"></i> </div>
-              <p class="uppercase_text">Telp : </p>
-              <a href="tel:+62812-3636-6860">+62 823-2275-3411</a> </div>
 			<?php   if(strlen($_SESSION['ulogin'])==0)
 			{	
 			?>
-			<div class="login_btn"> 
+			<div class="login_btn" style="color:#14274E"> 
 				<a href="#loginform" class="btn btn-xs uppercase" data-toggle="modal" data-dismiss="modal">Login / Register</a> 
 			</div>
 			<?php }
 			else{ 
-				echo "Selamat Datang!";
+				echo "Welcome!";
 			} ?>
           </div>
         </div>
@@ -40,7 +32,7 @@
       <div class="header_wrap">
         <div class="user_login">
           <ul>
-            <li class="dropdown"  bgcolor="blue"> <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true"></i> 
+            <li class="dropdown"  bgcolor="blue"> <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> 
 <?php 
 $email=$_SESSION['ulogin'];
 $sql ="SELECT nama_user FROM member WHERE email='$email'";
@@ -54,9 +46,9 @@ while($results = mysqli_fetch_array($query))
           <ul class="dropdown-menu">
            <?php if($_SESSION['ulogin']){?>
             <li><a href="profile.php">Profile Settings</a></li>
-              <li><a href="update-password.php">Update Password</a></li>
+              <li><a href="update-password.php">Change Password</a></li>
             <li><a href="riwayatsewa.php">Riwayat Sewa</a></li>
-            <li><a href="logout.php">Sign Out</a></li>
+            <li><a href="logout.php">Log Out</a></li>
             <?php }?>
           </ul>
             </li>
@@ -67,9 +59,8 @@ while($results = mysqli_fetch_array($query))
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="nav navbar-nav">
 		  <li><a href="index.php">Home</a></li>
-          <li><a href="paket.php">Daftar Paket</a></li>
-          <li><a href="page.php?type=faqs">FAQs</a></li>
-          <li><a href="page.php?type=aboutus">Tentang Kami</a></li>
+          <li><a href="paket.php">Package</a></li>
+          <li><a href="page.php?type=aboutus">About Us</a></li>
           <li><a href="contact-us.php">Hubungi Kami</a></li>
         </ul>
       </div>

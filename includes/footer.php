@@ -29,9 +29,9 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
       <div class="row">
       
         <div class="col-md-6">
-          <h6>Tentang Kami</h6>
+          <h6>Lavien Picture</h6>
           <ul>
-          <li><a href="page.php?type=aboutus">Tentang Kami</a></li>
+          <li><a href="page.php?type=aboutus">About Us</a></li>
             <li><a href="page.php?type=faqs">FAQs</a></li>
             <li><a href="page.php?type=privacy">Privacy</a></li>
           <li><a href="page.php?type=terms">Terms of use</a></li>
@@ -46,19 +46,14 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
       <div class="row">
         <div class="col-md-6 col-md-push-6 text-right">
           <div class="footer_widget">
-            <p>Connect with Us:</p>
             <ul>
-              <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
               <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
             </ul>
           </div>
         </div>
         <div class="col-md-6 col-md-pull-6">
-          <p class="copy-right">&copy;2019 Sistem Informasi Penyediaan Jasa Fotografi Berbasis Web. | Repost by <a href='https://stokcoding.com/' style="color: red;" title='StokCoding.com' target='_blank'>StokCoding.com</a>
-          </p>
+          <p class="copy-right">&copy;LavienPicture</p>
         </div>
       </div>
     </div>

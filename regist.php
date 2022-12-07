@@ -114,7 +114,6 @@ function checkLetter(theform)
 			<div class="modal-footer text-center">
 			<p>Sudah punya akun? <a href="#loginform" data-toggle="modal" data-dismiss="modal">Login Disini</a></p>
 			</div>
-			<br><center><p>Repost by <a href='https://stokcoding.com/' title='StokCoding.com' target='_blank'>StokCoding.com</a></p></center>
 			
 
      </div>

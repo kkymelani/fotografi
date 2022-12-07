@@ -47,11 +47,11 @@ error_reporting(0);
 <!-- /Header --> 
 
 <!--Page Header-->
-<section class="page-header listing_page">
+<!-- <section class="page-header listing_page">
   <div class="container">
     <div class="page-header_wrap">
       <div class="page-heading">
-        <h1>Daftar Paket Fotografi</h1>
+        <h1>Package</h1>
       </div>
       <ul class="coustom-breadcrumb">
         <li><a href="#">Home</a></li>
@@ -60,7 +60,7 @@ error_reporting(0);
     </div>
   </div>
   <div class="dark-overlay"></div>
-</section>
+</section> -->
 <!-- /Page Header--> 
 
 <!--Listing-->
