@@ -78,7 +78,7 @@ function checkLetter(theform)
 <!--Header-->
 <?php include('includes/header.php');?>
 <!-- /Header --> 
-<section class="user_profile inner_pages">
+<section class="user_profile inner_pages" > 
   <div class="container">
       <div class="user_profile_info">
 		<h6 align="center">Registrasi Member</h6>
@@ -114,8 +114,7 @@ function checkLetter(theform)
 			<div class="modal-footer text-center">
 			<p>Sudah punya akun? <a href="#loginform" data-toggle="modal" data-dismiss="modal">Login Disini</a></p>
 			</div>
-			
-
+		</div>
      </div>
 	</div>
 </div>

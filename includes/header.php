@@ -47,7 +47,7 @@ while($results = mysqli_fetch_array($query))
            <?php if($_SESSION['ulogin']){?>
             <li><a href="profile.php">Profile Settings</a></li>
               <li><a href="update-password.php">Change Password</a></li>
-            <li><a href="riwayatsewa.php">Riwayat Sewa</a></li>
+            <li><a href="riwayatsewa.php">Riwayat Pemesanan</a></li>
             <li><a href="logout.php">Log Out</a></li>
             <?php }?>
           </ul>

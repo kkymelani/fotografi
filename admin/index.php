@@ -28,7 +28,7 @@ if(mysqli_num_rows($query)>0){
 	<meta name="author" content="">
 	
 	<title><?php echo $pagedesc;?></title>
-	<link rel="shortcut icon" href="img/fav.png">
+	<link rel="shortcut icon" href="img/logo/black.png">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
@@ -41,12 +41,12 @@ if(mysqli_num_rows($query)>0){
 
 <body>
 	
-	<div class="login-page bk-img" style="background-image: url(img/login-bg1.jpg);">
+	<div class="login-page bk-img" style="background-image: url(img/background.jpg);">
 		<div class="form-content">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3">
-						<h1 class="text-center text-bold text-light mt-4x">Login Admin</h1>
+						<h1 class="text-center text-bold text-light mt-4x">Hi! This is Admin</h1>
 						<div class="well row pt-2x pb-3x bk-light">
 							<div class="col-md-8 col-md-offset-2">
 								<form method="post">
@@ -56,8 +56,6 @@ if(mysqli_num_rows($query)>0){
 									<input type="password" placeholder="Password" name="password" class="form-control mb">
 									<button class="btn btn-primary btn-block" name="login" type="submit">Log In</button>
 								</form>
-								<br><center><p>Repost by <a href='https://stokcoding.com/' title='StokCoding.com' target='_blank'>StokCoding.com</a></p></center>
-								
 							</div>
 						</div>
 					</div>

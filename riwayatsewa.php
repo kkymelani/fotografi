@@ -72,13 +72,13 @@ $tglhasil = date("Y-m-d",$tgl);
 		<tr>    
 			<th width="5" align="center">No</th>
 			<th width="10">Kode Booking</th>		
-			<th width="20">Paket</th>
-			<th width="10">Tgl. Booking</th>
-			<th width="10">Tanggal Take</th>
+			<th width="20">Package</th>
+			<th width="10">Tanggal Booking</th>
+			<th width="10">Tanggal Pemotretan</th>
 			<th width="5">Jam</th>
-			<th width="10">Biaya</th>
-			<th width="10">Status</th>
-			<th width="5">Opsi</th>
+			<th width="10">Total</th>
+			<th width="10">Status Pembayaran</th>
+			<th width="5">Option</th>
 		</tr>
 	</thead>
 	<?php

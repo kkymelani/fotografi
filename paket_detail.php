@@ -98,7 +98,7 @@ while($result = mysqli_fetch_array($query))
             <div class="tab-content"> 
               <!-- vehicle-overview -->
               <div role="tabpanel" class="tab-pane active" id="vehicle-overview">                
-                <p><?php echo htmlentities($result['ket_paket']);?></p>
+                <p style="white-space: pre-wrap;"><?php echo htmlentities($result['ket_paket']);?></p>
               </div>
             </div>
           </div>

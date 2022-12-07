@@ -164,8 +164,8 @@ return true;
 				</select>
             </div>
             <div class="form-group">
-			<label>Location Wedding</label>
-				<textarea class="form-control" name="location-wedding" placeholder="Complete Address" required></textarea>
+			<label>Lokasi Wedding</label>
+				<textarea class="form-control" name="location-wedding" placeholder="Alamat Lengkap" required></textarea>
             </div>
 			<br/>			
 			<div class="form-group">

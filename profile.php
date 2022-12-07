@@ -91,25 +91,7 @@ function checkLetter(theform)
         
 <!--Header-->
 <?php include('includes/header.php');?>
-<!-- /Header --> 
-<!--Page Header-->
-<section class="page-header profile_page">
-  <div class="container">
-    <div class="page-header_wrap">
-      <div class="page-heading">
-        <h1>Profil Anda</h1>
-      </div>
-      <ul class="coustom-breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li>Profile</li>
-      </ul>
-    </div>
-  </div>
-  <!-- Dark Overlay-->
-  <div class="dark-overlay"></div>
-</section>
-<!-- /Page Header--> 
-
+<!-- /Header -->
 
 <?php 
 $useremail=$_SESSION['ulogin'];
@@ -118,9 +100,9 @@ $query = mysqli_query($koneksidb,$sql);
 while($result=mysqli_fetch_array($query)){
 ?>
 <section class="user_profile inner_pages">
-  <div class="container">
+<h3 align="center">Your Profile</h3>  
+<div class="container">
 	<div class="user_profile_info">
-	
 		<div class="col-md-12 col-sm-10">
           <?php  
          if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
