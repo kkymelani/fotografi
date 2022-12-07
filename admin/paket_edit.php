@@ -98,7 +98,7 @@ function valid(theform){
 										
 									<div class="form-group">
 										<div class="col-sm-4">
-											<center>Gambar Paket<img src="gallery/<?php echo htmlentities($result['foto_paket']);?>" width="300" height="200" style="border:solid 1px #000">
+											<center>Gambar Paket<img src="gallery/<?php echo htmlentities($result['foto_paket']);?>" width="500" height="400" style="border:solid 1px #000">
 											<br/>
 											<br/>
 											<a href="gambar_paket.php?imgid=<?php echo htmlentities($result['id_paket'])?>" class="btn btn-warning">&nbsp;&nbsp;Ganti Gambar&nbsp;&nbsp;</a></center>

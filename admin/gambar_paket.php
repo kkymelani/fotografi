@@ -80,7 +80,7 @@ if(isset($_POST['update'])){
 												while ($result = mysqli_fetch_array($query)){
 												?>
 												<div class="col-sm-8">
-													<img src="gallery/<?php echo htmlentities($result['foto_paket']);?>" width="300" height="200" style="border:solid 1px #000">
+													<img src="gallery/<?php echo htmlentities($result['foto_paket']);?>" width="500" height="400" style="border:solid 1px #000">
 												</div>
 											<?php }?>
 											</div>
