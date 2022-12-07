@@ -91,7 +91,7 @@ header('location:index.php');
 											</div>
 										</div>
 										<div class="form-group">
-											<label class="col-sm-2 control-label">Status<span style="color:red">*</span></label>
+											<label class="col-sm-2 control-label">Status Pembayaran<span style="color:red">*</span></label>
 											<div class="col-sm-4">
 												<select class="form-control" name="status" required>
 														<?php
@@ -104,7 +104,7 @@ header('location:index.php');
 											</div>
 										</div>
 										<div class="form-group">
-											<label class="col-sm-2 control-label">Mamber</label>
+											<label class="col-sm-2 control-label">Member</label>
 											<div class="col-sm-4">
 												<input type="text" name="penyewa" class="form-control" value="<?php echo $result['nama_user'];?>" required readonly>
 											</div>
@@ -122,7 +122,7 @@ header('location:index.php');
 											</div>
 										</div>
 										<div class="form-group">
-											<label class="col-sm-2 control-label">Bukti Bayar</label>
+											<label class="col-sm-2 control-label">Bukti Pembayaran</label>
 											<div class="col-sm-4">
 												<a href="../image/bukti/<?php echo $result['bukti_bayar'];?>" target="_blank"><img src="../image/bukti/<?php echo $result['bukti_bayar'];?>" width="150" height="150"></a>
 											</div>
@@ -130,7 +130,7 @@ header('location:index.php');
 										<div class="form-group">
 											<div class="col-sm-3">
 												<div class="checkbox checkbox-inline">
-													<button class="btn btn-primary" type="submit" name="submit" style="margin-top:4%">Simpan</button>
+													<button class="btn btn-primary" type="submit" name="submit" style="margin-top:4%">Save</button>
 												</div>
 											</div>
 										</div>
@@ -147,7 +147,7 @@ header('location:index.php');
 										<div class="panel-body">
 										<form class="form-horizontal">
 											<div class="form-group">
-												<label class="col-sm-2 control-label">Paket</label>
+												<label class="col-sm-2 control-label">Package</label>
 												<div class="col-sm-4">
 													<input type="text" name="namamobil" class="form-control" value="<?php echo $result['nama_paket'];?>" required readonly>
 												</div>

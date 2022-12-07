@@ -116,18 +116,18 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 				<div class="row">
 					<div class="col-md-12">
 					
-						<h2 class="page-title">Kelola Halaman</h2>
+						<h2 class="page-title">Manage Page</h2>
 
 						<div class="row">
 							<div class="col-md-10">
 								<div class="panel panel-default">
-									<div class="panel-heading">Form Kelola Halaman</div>
+									<div class="panel-heading">Form Manage Page</div>
 									<div class="panel-body">
 										<form method="post" name="chngpwd" class="form-horizontal" onSubmit="return valid();">
 										<?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 										else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 											<div class="form-group">
-												<label class="col-sm-4 control-label">Pilih Halaman</label>
+												<label class="col-sm-4 control-label">Pilih Page</label>
 												<div class="col-sm-4">
 													<select name="menu1" class="form-control" onChange="MM_jumpMenu('parent',this,0)">
 													  <option value="" selected="selected" class="form-control">***Pilih Halaman***</option>
@@ -139,7 +139,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 											<div class="hr-dashed"></div>
 											
 											<div class="form-group">
-												<label class="col-sm-4 control-label">Halaman Terpilih</label>
+												<label class="col-sm-4 control-label">Page</label>
 												<div class="col-sm-4">
 												<?php
 												switch($_GET['type'])
@@ -159,7 +159,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 											</div>
 								
 									<div class="form-group">
-										<label class="col-sm-4 control-label">Detail Halaman</label>
+										<label class="col-sm-4 control-label">Detail Page</label>
 										<div class="col-sm-8">
 											<textarea class="form-control" rows="5" cols="50" name="pgedetails" id="pgedetails" placeholder="Package Details" required>
 											<?php 
@@ -176,7 +176,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 									</div>
 									<div class="form-group">
 										<div class="col-sm-8 col-sm-offset-4">
-											<button type="submit" name="submit" value="Update" id="submit" class="btn-primary btn">Update</button>
+											<button type="submit" name="submit" value="Update" id="submit" class="btn-primary btn">Save</button>
 										</div>
 									</div>
 								</form>

@@ -100,10 +100,6 @@ if($lastInsertId){
               <div class="icon_wrap"><i class="fa fa-phone" aria-hidden="true"></i></div>
               <div class="contact_info_m"><a href=""><?php   echo htmlentities($result['telp_kami']); ?></a></div>
             </li>
-            <li>
-              <div class="icon_wrap"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
-              <div class="contact_info_m"><a href=""><?php   echo htmlentities($result['email_kami']); ?></a></div>
-            </li>
           </ul>
         <?php }} ?>
       </div>

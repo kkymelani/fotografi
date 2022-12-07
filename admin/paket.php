@@ -46,11 +46,11 @@ if(strlen($_SESSION['alogin'])==0){
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-12">
-						<h2 class="page-title">Data Paket</h2>
+						<h2 class="page-title">Package</h2>
 						<!-- Zero Configuration Table -->
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="paket_tambah.php" class="btn btn-success">Tambah</a>
+								<a href="paket_tambah.php" class="btn btn-success">Add</a>
 							</div>
 							<div class="panel-body">
 							<div class = "table-responsive">
@@ -61,7 +61,7 @@ if(strlen($_SESSION['alogin'])==0){
 											<th>Nama Paket</th>
 											<th>Harga/Packs</th>
 											<th>Foto</th>
-											<th>Opsi</th>
+											<th>Option</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -76,10 +76,10 @@ if(strlen($_SESSION['alogin'])==0){
 											<td><?php echo htmlentities($nomor);?></td>
 											<td><?php echo htmlentities($result['nama_paket']);?></td>
 											<td><?php echo format_rupiah($result['harga']);?></td>
-											<td><img src="gallery/<?php echo $result['foto_paket'];?>" width="100px"></td>
+											<td><img src="gallery/<?php echo $result['foto_paket'];?>" width="200px"></td>
 											<td align="center">
-												<a href="paket_edit.php?id=<?php echo $result['id_paket'];?>" class="btn btn-warning btn-xs">&nbsp;&nbsp;Ubah&nbsp;&nbsp;</a>&nbsp;&nbsp;
-												<a href="paket_hapus.php?id=<?php echo $result['id_paket'];?>" onclick="return confirm('Apakah anda yakin akan menghapus <?php echo $result['nama_paket'];?>?');" class="btn btn-danger btn-xs">&nbsp;&nbsp;Hapus&nbsp;&nbsp;</a>
+												<a href="paket_edit.php?id=<?php echo $result['id_paket'];?>" class="btn btn-warning btn-xs">&nbsp;&nbsp;Edit&nbsp;&nbsp;</a>&nbsp;&nbsp;
+												<a href="paket_hapus.php?id=<?php echo $result['id_paket'];?>" onclick="return confirm('Apakah anda yakin akan menghapus <?php echo $result['nama_paket'];?>?');" class="btn btn-danger btn-xs">&nbsp;&nbsp;Delete&nbsp;&nbsp;</a>
 											</td>
 										</tr>
 										<?php } ?>

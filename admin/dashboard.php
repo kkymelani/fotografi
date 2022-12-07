@@ -51,8 +51,7 @@ else{
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2 class="page-title">Dashboard | Repost by <a href='https://stokcoding.com/' title='StokCoding.com' target='_blank'>StokCoding.com</a>
-						</h2>
+						<h2 class="page-title">Home</h2>
 
 						<div class="row">
 							<div class="col-md-12">

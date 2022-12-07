@@ -51,16 +51,16 @@ $querysewa = mysqli_query($koneksidb,$sqlsewa);
 				<tbody>
 					<tr>
 						<td rowspan="3" width="16%" class="text-center">
-							<img src="img/icon.png" alt="logo-dkm" width="80" />
+							<img src="img/logolavien.png" alt="logo-dkm" width="200" />
 						</td>
-						<td class="text-center"><h3>TukangFoto.com</h3></td>
+						<td class="text-center"><h1>Lavien Picture</h1></td>
 						<td rowspan="3" width="16%">&nbsp;</td>
 					</tr>
 					<tr>
-						<td class="text-center">Phone : +62 823-2275-3411 | E-mail : ask@tukangfoto.com</td>
+						<td class="text-center">Whatsapp: +62 823-2275-3411</td>
 					</tr>
 					<tr>
-						<td class="text-center">Bekasi</td>
+						<td class="text-center">Pekanbaru</td>
 					</tr>
 				</tbody>
 			</table>
@@ -70,7 +70,7 @@ $querysewa = mysqli_query($koneksidb,$sqlsewa);
 
 	<section id="body-of-report">
 		<div class="container-fluid">
-			<h4 class="text-center">Detail Laporan</h4>
+			<h3 class="text-center">Detail Laporan</h3>
 			<h5 class="text-center">Tanggal <?php echo IndonesiaTgl($awal) ." s/d ". IndonesiaTgl($akhir); ?></h5>
 			<br/>
 			<table id="zctb" class="display table table-striped table-bordered table-hover" cellspacing="0" width="100%">

@@ -69,7 +69,7 @@ else{
 											<th>Email</th>
 											<th>Telp</th>
 											<th>Alamat</th>
-											<th>Opsi</th>
+											<th>Option</th>
 										</tr>
 									</thead>
 									<tbody>

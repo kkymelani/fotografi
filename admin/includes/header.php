@@ -1,5 +1,6 @@
 <div class="brand clearfix">
-	<a href="dashboard.php" style="font-size: 20px;"><img src="img/logoputih.png" width="150px" height="60px"></a>  
+	<a href="dashboard.php" style="font-size: 20px; padding-left: 40px; top: 10px;
+    position: relative;"><img src="img/logoputih.png" width="165px" height="40px"></a>  
 		<span class="menu-btn"><i class="fa fa-bars"></i></span>
 		<ul class="ts-profile-nav">
             <?php
@@ -17,9 +18,9 @@
                 <span class="fa fa-angle-down"></span>
 				</a>
 				<ul>
-					<li><a href="change-password.php"><i class="fa fa-key pull-right"></i>Ganti Password</a></li>
-					<li><a href="profile.php"><i class="fa fa-user pull-right"></i>Profil</a></li>
-					<li><a href="logout.php"><i class="fa fa-sign-out pull-right"></i>Keluar</a></li>
+					<li><a href="change-password.php">Change Password</a></li>
+					<li><a href="profile.php"></i>Profile</a></li>
+					<li><a href="logout.php"></i>Log Out</a></li>
 				</ul>
 			</li>
 		</ul>

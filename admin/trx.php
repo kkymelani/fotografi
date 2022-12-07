@@ -86,7 +86,7 @@ else{
 										<th>Jam</th>
 										<th>Biaya</th>
 										<th>Member</th>
-										<th>Status</th>
+										<th>Status Pembayaran</th>
 										<th>Aksi</th>
 										</tr>
 									</thead>

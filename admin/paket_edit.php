@@ -58,12 +58,12 @@ function valid(theform){
 				<div class="row">
 					<div class="col-md-12">
 					
-						<h2 class="page-title">Edit Data Baju</h2>
+						<h2 class="page-title">Manage Package</h2>
 
 						<div class="row">
 							<div class="col-md-12">
 								<div class="panel panel-default">
-									<div class="panel-heading">Form Edit Data Baju</div>
+									<div class="panel-heading">Form Manage Package</div>
 									<div class="panel-body">
 										<?php 
 										$id=intval($_GET['id']);
@@ -74,7 +74,7 @@ function valid(theform){
 
 										<form method="post" class="form-horizontal" name="theform" action ="paket_upd.php" onsubmit="return valid(this);" enctype="multipart/form-data">
 										<div class="form-group">
-											<label class="col-sm-2 control-label">Nama Paket<span style="color:red">*</span></label>
+											<label class="col-sm-2 control-label">Name<span style="color:red">*</span></label>
 											<div class="col-sm-4">
 												<input type="hidden" name="id" class="form-control" value="<?php echo $id;?>" required>
 												<input type="text" name="nama" class="form-control" value="<?php echo htmlentities($result['nama_paket']);?>" required>
@@ -118,7 +118,7 @@ function valid(theform){
 									<div class="form-group">
 										<div class="col-sm-3">
 											<div class="checkbox checkbox-inline">
-												<button class="btn btn-primary" type="submit">Update</button>
+												<button class="btn btn-primary" type="submit">Save</button>
 												<a href="baju.php" class="btn btn-default">Batal</a>
 											</div>
 										</div>

@@ -54,7 +54,7 @@ if(mysqli_num_rows($query)>0){
 									<input type="text" placeholder="Username" name="username" class="form-control mb">
 									<label for="" class="text-uppercase text-sm">Password</label>
 									<input type="password" placeholder="Password" name="password" class="form-control mb">
-									<button class="btn btn-primary btn-block" name="login" type="submit">LOGIN</button>
+									<button class="btn btn-primary btn-block" name="login" type="submit">Log In</button>
 								</form>
 								<br><center><p>Repost by <a href='https://stokcoding.com/' title='StokCoding.com' target='_blank'>StokCoding.com</a></p></center>
 								

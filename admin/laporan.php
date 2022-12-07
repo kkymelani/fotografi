@@ -79,7 +79,7 @@ function valid()
 		<?php include('includes/leftbar.php');?>
 		<div class="content-wrapper">
 			<div class="container-fluid">
-						<h2 class="page-title">Laporan</h2>
+						<h2 class="page-title">Laporan Pemasukan</h2>
 						<div class="panel panel-default">
 							<div class="panel-body">
 					        <form method="get" name="laporan" onSubmit="return valid();"> 
