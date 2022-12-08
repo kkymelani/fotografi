@@ -114,7 +114,7 @@ else{
 											<td><?php echo htmlentities($result['stt_trx']);?></td>
 											<td>
 											<a href="#myModal" data-toggle="modal" data-load-code="<?php echo $result['id_trx']; ?>" data-remote-target="#myModal .modal-body"><span class="glyphicon glyphicon-eye-open"></span></a>&nbsp;&nbsp;&nbsp;
-											<a href="trx_bayar_hapus.php?id=<?php echo $result['id_trx'];?>" onclick="return confirm('Apakah anda yakin akan menghapus data <?php echo $result['id_trx'];?>?');"><i class="fa fa-trash"></i></a></td>
+											<a style="display:none" href="trx_bayar_hapus.php?id=<?php echo $result['id_trx'];?>" onclick="return confirm('Apakah anda yakin akan menghapus data <?php echo $result['id_trx'];?>?');"><i class="fa fa-trash"></i></a></td>
 										</tr>
 										<?php }?>
 									</tbody>
