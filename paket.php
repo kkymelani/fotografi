@@ -74,7 +74,7 @@ error_reporting(0);
 			<div class="car-info-box"> <a href="paket_detail.php?id=<?php echo htmlentities($results['id_paket']);?>"><img src="admin/gallery/<?php echo htmlentities($results['foto_paket']);?>" class="img-responsive" alt="image"></a></div>
 			<div class="car-title-m">
 				<h6><a href="paket_detail.php?id=<?php echo htmlentities($results['id_paket']);?>" align='center'><?php echo htmlentities($results['nama_paket']);?></a></h6>
-				<span class="price"><?php echo htmlentities(format_rupiah($results['harga']));?> /Pack</span> 
+				<span class="price"><?php echo htmlentities(format_rupiah($results['harga']));?> /pack</span> 
 			</div>
 		<div class="inventory_info_m">
 			<p><?php echo substr($results['ket_paket'],0,70);?></p>

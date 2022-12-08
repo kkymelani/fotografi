@@ -74,7 +74,7 @@ while($result = mysqli_fetch_array($query))
       </div>
       <div class="col-md-3">
         <div class="price_info">
-          <p><?php echo htmlentities(format_rupiah($result['harga']));?> </p>/ Packs
+          <p><?php echo htmlentities(format_rupiah($result['harga']));?> </p>/ pack
          
         </div>
       </div>
@@ -87,7 +87,7 @@ while($result = mysqli_fetch_array($query))
           <div class="listing_detail_wrap"> 
             <!-- Nav tabs -->
             <ul class="nav nav-tabs gray-bg" role="tablist">
-              <li role="presentation" class="active"><a href="#vehicle-overview " aria-controls="vehicle-overview" role="tab" data-toggle="tab">Deskripsi Paket</a></li>
+              <li role="presentation" class="active"><a href="#vehicle-overview " aria-controls="vehicle-overview" role="tab" data-toggle="tab">Deskripsi Package</a></li>
 			</ul>
             
             <!-- Tab panes -->
@@ -108,14 +108,14 @@ while($result = mysqli_fetch_array($query))
 
 		<div class="sidebar_widget">
           <div class="widget_heading">
-            <h5><i class="fa fa-envelope" aria-hidden="true"></i>Booking Sekarang</h5>
+            <h5><i class="fa fa-envelope" aria-hidden="true"></i>Order Disini</h5>
           </div>
           <form method="get" action="booking.php">
 			<input type="hidden" class="form-control" name="id" value=<?php echo $id;?> required>
 			<?php if($_SESSION['ulogin'])
               {?>
               <div class="form-group" align="center">
-                <button class="btn" align="center">Booking Sekarang</button>
+                <button class="btn" align="center">Book Now</button>
               </div>
               <?php } else { ?>
 				<a href="#loginform" class="btn btn-xs uppercase" data-toggle="modal" data-dismiss="modal">Login Untuk Booking</a>

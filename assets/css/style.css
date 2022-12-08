@@ -909,6 +909,7 @@ table thead th, table thead td {
   line-height: 17px;
   list-style: outside none none;
   margin: 0;
+  background: #000;
   padding: 4px 15px 7px;
 }
 .user_login > ul > li a {

@@ -149,7 +149,7 @@ function valid()
 											<div class="hr-dashed"></div>
 											<div class="form-group">
 												<div class="col-sm-8 col-sm-offset-4">								
-													<button class="btn btn-primary" name="submit" type="submit">Save changes</button>
+													<button class="btn btn-primary" name="submit" type="submit">Save</button>
 												</div>
 											</div>
 

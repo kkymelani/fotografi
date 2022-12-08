@@ -81,10 +81,10 @@ else{
 										<tr align="center">
 										<th>No</th>
 										<th>Kode Booking</th>
-										<th>Paket </th>
-										<th>Tgl. Take</th>
+										<th>Package </th>
+										<th>Tanggal Pemotretan</th>
 										<th>Jam</th>
-										<th>Biaya</th>
+										<th>Total</th>
 										<th>Member</th>
 										<th>Status Pembayaran</th>
 										<th>Aksi</th>

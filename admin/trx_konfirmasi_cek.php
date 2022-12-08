@@ -154,7 +154,7 @@ header('location:index.php');
 											</div>
 											<br/>
 											<div class="form-group">
-												<label class="col-sm-2 control-label">Tanggal Take</label>
+												<label class="col-sm-2 control-label">Tanggal Pemotretan</label>
 												<div class="col-sm-4">
 													<input type="text" name="mulai" class="form-control" value="<?php echo IndonesiaTgl($result['tgl_take']);?>" required readonly>
 												</div>
@@ -168,14 +168,14 @@ header('location:index.php');
 											</div>
 											<br/>
 											<div class="form-group">
-												<label class="col-sm-2 control-label">Biaya</label>
+												<label class="col-sm-2 control-label">Total</label>
 												<div class="col-sm-4">
 													<input type="text" name="total" class="form-control" value="<?php echo format_rupiah($result['harga']);?>" required readonly>
 												</div>
 											</div>
 											<br/>
 											<div class="form-group">
-												<label class="col-sm-2 control-label">Catatan</label>
+												<label class="col-sm-2 control-label">Lokasi Wedding</label>
 												<div class="col-sm-4">
 													<textarea class="form-control" readonly><?php echo $result['catatan'];?></textarea>
 												</div>

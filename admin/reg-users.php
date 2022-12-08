@@ -67,7 +67,7 @@ else{
 											<th>No</th>
 											<th>Nama</th>
 											<th>Email</th>
-											<th>Telp</th>
+											<th>Telepon</th>
 											<th>Alamat</th>
 											<th>Option</th>
 										</tr>

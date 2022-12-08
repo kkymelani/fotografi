@@ -58,8 +58,8 @@ if(strlen($_SESSION['alogin'])==0){
 									<thead>
 										<tr>
 											<th>No</th>
-											<th>Nama Paket</th>
-											<th>Harga/Packs</th>
+											<th>Nama Package</th>
+											<th>Harga /packs</th>
 											<th>Foto</th>
 											<th>Option</th>
 										</tr>

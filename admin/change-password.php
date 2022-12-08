@@ -83,8 +83,6 @@ function valid()
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
 }
 		</style>
-
-
 </head>
 
 <body>
@@ -97,12 +95,12 @@ function valid()
 				<div class="row">
 					<div class="col-md-12">
 					
-						<h2 class="page-title">Ubah Password</h2>
+						<h2 class="page-title">Change Password</h2>
 
 						<div class="row">
 							<div class="col-md-10">
 								<div class="panel panel-default">
-									<div class="panel-heading">Form Ubah Password</div>
+									<div class="panel-heading">Form Change Password</div>
 									<div class="panel-body">
 										<form method="post" name="chngpwd" class="form-horizontal" onSubmit="return valid();">
   	        	  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
@@ -130,30 +128,18 @@ function valid()
 												</div>
 											</div>
 											<div class="hr-dashed"></div>
-										
-								
-											
 											<div class="form-group">
 												<div class="col-sm-8 col-sm-offset-4">
-								
-													<button class="btn btn-primary" name="submit" type="submit">Save changes</button>
+													<button class="btn btn-primary" name="submit" type="submit">Save</button>
 												</div>
 											</div>
-
 										</form>
-
 									</div>
 								</div>
 							</div>
-							
 						</div>
-						
-					
-
 					</div>
 				</div>
-				
-			
 			</div>
 		</div>
 	</div>

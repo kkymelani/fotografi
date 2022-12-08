@@ -1,6 +1,5 @@
 	<nav class="ts-sidebar">
-			<ul class="ts-sidebar-menu">			
-				<li class="ts-label">Main</li>
+			<ul class="ts-sidebar-menu">
 				<li><a href="dashboard.php"><i class="fa fa-dashboard"></i>Home</a></li>
 				<li><a href="#"><i class="fa fa-money"></i>Transaksi</a>
 					<ul class="ts-sidebar-menu">
