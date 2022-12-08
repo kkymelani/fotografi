@@ -107,17 +107,10 @@ else{
 		</div>
 	</div>    
 	<!-- Large modal --> 
-
-						
-
 							</div>
 						</div>
-
-					
-
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>
