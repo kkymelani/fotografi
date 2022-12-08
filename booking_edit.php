@@ -91,7 +91,7 @@ $tglhasil = date("Y-m-d",$tgl);
 				<input type="text" class="form-control" name="total" value="<?php echo format_rupiah($result['harga']);?>"readonly>
             </div>
             <div class="form-group">
-			<label>Catatan</label><br/>
+			<label>Lokasi Wedding</label><br/>
 				<textarea class="form-control" readonly><?php echo $result['catatan'];?></textarea>
             </div>
 			<div class="form-group">

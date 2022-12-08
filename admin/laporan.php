@@ -120,7 +120,7 @@ function valid()
 										<tr>
 											<th>No</th>
 											<th>Kode Booking</th>
-											<th>Tanggal Transaksi</th>
+											<th>Tanggal Booking</th>
 											<th>Tanggal Bayar</th>
 											<th>Total</th>
 										</tr>
