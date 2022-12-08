@@ -59,7 +59,7 @@ include('includes/config.php');
 <!-- /Header --> 
 
 <!--Contact-us-->
-<section class="contact_us section-padding">
+<section class="contact_us section-padding" style="background-color:#eeeeee">
   <div class="container">
       <div class="col-md-6">
         <h3>Info Kontak</h3>

@@ -47,7 +47,7 @@ if(mysqli_num_rows($query)>=1){
 while($results = mysqli_fetch_array($query))
 { ?>
 
-<section class="about_us section-padding">
+<section class="about_us section-padding" style="background-color:#eeeeee">
   <div class="container">
     <div class="section-header text-center">
       <h2><?php   echo htmlentities($results['PageName']); ?></h2>
