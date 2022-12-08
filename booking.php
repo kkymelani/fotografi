@@ -165,7 +165,7 @@ return true;
             </div>
             <div class="form-group">
 			<label>Lokasi Wedding</label>
-				<textarea class="form-control" name="location-wedding" placeholder="Alamat Lengkap" required></textarea>
+				<textarea class="form-control" name="catatan" placeholder="Alamat Lengkap" required></textarea>
             </div>
 			<br/>			
 			<div class="form-group">

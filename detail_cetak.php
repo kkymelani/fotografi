@@ -85,17 +85,17 @@ $tglhasil = date("Y-m-d",$tgl);
 						<td><?php echo $result['id_trx'];?></td>
 					</tr>
 					<tr>
-						<td>Member</td>
+						<td>Nama Member</td>
 						<td>:</td>
 						<td><?php echo $result['nama_user'] ?></td>
 					</tr>
 					<tr>
-						<td>Paket</td>
+						<td>Package</td>
 						<td>:</td>
 						<td><?php echo $result['nama_paket'];?></td>
 					</tr>
 					<tr>
-						<td>Tanggal Take</td>
+						<td>Tanggal Pemotretan</td>
 						<td>:</td>
 						<td><?php echo IndonesiaTgl($result['tgl_take']);?></td>
 					</tr>
@@ -105,12 +105,12 @@ $tglhasil = date("Y-m-d",$tgl);
 						<td><?php echo $result['jam_take'];?></td>
 					</tr>
 					<tr>
-						<td>Biaya</td>
+						<td>Total</td>
 						<td>:</td>
 						<td><?php echo format_rupiah($result['harga']);?></td>
 					</tr>
 					<tr>
-						<td>Status</td>
+						<td>Status Pembayaran</td>
 						<td>:</td>
 						<td><?php echo $result['stt_trx'];?></td>
 					</tr>
