@@ -69,11 +69,11 @@ else{
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2 class="page-title">Booking Menunggu Pembayaran</h2>
+						<h2 class="page-title">Transaksi Menunggu Pembayaran</h2>
 						
 						<!-- Zero Configuration Table -->
 						<div class="panel panel-default">
-							<div class="panel-heading">Daftar Booking Menunggu Pembayaran</div>
+							<div class="panel-heading">Daftar Transaksi yang Menunggu Pembayaran</div>
 							<div class="panel-body">
 							<div class = "table-responsive">
 								<table id="zctb" class="display table table-striped table-bordered table-hover" cellspacing="0" width="100%">

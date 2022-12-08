@@ -56,16 +56,16 @@ $tglhasil = date("Y-m-d",$tgl);
 				<tbody>
 					<tr>
 						<td rowspan="3" width="16%" class="text-center">
-							<img src="admin/img/icon.png" alt="logo-dkm" width="80" />
+							<img src="admin/img/logolavien.png" alt="logo-dkm" width="200" style="padding-left: 20px; padding-top:10px" />
 						</td>
-						<td class="text-center"><h3>TukangFoto.com</h3></td>
+						<td class="text-center"><h1>Lavien Picture</h1></td>
 						<td rowspan="3" width="16%">&nbsp;</td>
 					</tr>
 					<tr>
-						<td class="text-center">Phone : +62 823-2275-3411 | E-mail : ask@tukangfoto.com</td>
+						<td class="text-center">Whatsapp: +62 813-7496-7174</td>
 					</tr>
 					<tr>
-						<td class="text-center">Bekasi</td>
+						<td class="text-center">Pekanbaru</td>
 					</tr>
 				</tbody>
 			</table>

@@ -51,7 +51,7 @@ $querysewa = mysqli_query($koneksidb,$sqlsewa);
 				<tbody>
 					<tr>
 						<td rowspan="3" width="16%" class="text-center">
-							<img src="img/logolavien.png" alt="logo-dkm" width="200" />
+							<img src="img/logolavien.png" alt="logo-dkm" width="200" style="padding-left: 20px; padding-top:10px" />
 						</td>
 						<td class="text-center"><h1>Lavien Picture</h1></td>
 						<td rowspan="3" width="16%">&nbsp;</td>

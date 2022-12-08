@@ -162,6 +162,13 @@ header('location:index.php');
 											</div>
 											<br/>
 											<div class="form-group">
+												<label class="col-sm-2 control-label">Lokasi Wedding</label>
+												<div class="col-sm-4">
+													<textarea class="form-control" readonly><?php echo $result['catatan'];?></textarea>
+												</div>
+											</div>
+											<br/>
+											<div class="form-group">
 												<label class="col-sm-2 control-label">Jam</label>
 												<div class="col-sm-4">
 													<input type="text" name="selesai" class="form-control" value="<?php echo $result['jam_take'];?>" required readonly>
@@ -175,12 +182,6 @@ header('location:index.php');
 												</div>
 											</div>
 											<br/>
-											<div class="form-group">
-												<label class="col-sm-2 control-label">Lokasi Wedding</label>
-												<div class="col-sm-4">
-													<textarea class="form-control" readonly><?php echo $result['catatan'];?></textarea>
-												</div>
-											</div>
 											</form>
 									</div>
 								</div>
