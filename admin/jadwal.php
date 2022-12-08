@@ -83,6 +83,7 @@ else{
 										<th>Kode Booking</th>
 										<th>Paket </th>
 										<th>Tgl. Take</th>
+										<th>Lokasi Wedding</th>
 										<th>Jam</th>
 										<th>Biaya</th>
 										<th>Member</th>
@@ -110,6 +111,7 @@ else{
 											<td><?php echo htmlentities($result['id_trx']);?></td>
 											<td><?php echo htmlentities($result['nama_paket']);?></td>
 											<td><?php echo IndonesiaTgl(htmlentities($result['tgl_take']));?></td>
+											<td><?php echo htmlentities($result['catatan']);?></td>
 											<td><?php echo htmlentities($result['jam_take']);?></td>
 											<td><?php echo format_rupiah(htmlentities($result['harga']));?></td>
 											<td><a href="#myModal" data-toggle="modal" data-load-id="<?php echo $result['email']; ?>" data-remote-target="#myModal .modal-body"><?php echo $result['nama_user']; ?></a></td>
