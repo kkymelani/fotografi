@@ -6,7 +6,10 @@ $awal=$_GET['awal'];
 $akhir=$_GET['akhir'];
 $stt	 = "Sudah Dibayar";
 $stt1	 = "Selesai";
-$sqlsewa = "SELECT * FROM transaksi, member WHERE transaksi.email = member.email AND stt_trx='$stt' OR stt_trx='$stt1' AND tgl_bayar BETWEEN '$awal' AND '$akhir'";
+$sqlsewa = "SELECT transaksi.*,paket.*,member.* FROM transaksi, member, paket
+			WHERE (transaksi.email = member.email AND transaksi.id_paket = paket.id_paket)
+			AND (transaksi.stt_trx='$stt' OR transaksi.stt_trx='$stt1') AND (transaksi.tgl_bayar BETWEEN '$awal' AND '$akhir')
+			ORDER BY member.nama_user ASC";
 $querysewa = mysqli_query($koneksidb,$sqlsewa);
 
 ?>
@@ -77,10 +80,11 @@ $querysewa = mysqli_query($koneksidb,$sqlsewa);
 				<thead>
 					<tr>
 						<th>No</th>
+						<th>Kode Booking</th>
 						<th>Nama Member</th>
-						<th>Kode booking</th>
 						<th>Tanggal Booking</th>
 						<th>Tanggal Bayar</th>
+						<th>Nama Package</th>
 						<th>Total Bayar</th>
 					</tr>
 				</thead>
@@ -98,10 +102,11 @@ $querysewa = mysqli_query($koneksidb,$sqlsewa);
 				?>	
 					<tr align="center">
 						<td><?php echo $no;?></td>
-						<td><?php echo htmlentities($result['nama_user']);?></td>
 						<td><?php echo htmlentities($result['id_trx']);?></td>
+						<td><?php echo htmlentities($result['nama_user']);?></td>
 						<td><?php echo IndonesiaTgl(htmlentities($result['tgl_trx']));?></td>
 						<td><?php echo IndonesiaTgl(htmlentities($result['tgl_bayar']));?></td>
+						<td><?php echo htmlentities($result['nama_paket']);?></td>
 						<td><?php echo format_rupiah($res['harga']);?></td>
 					</tr>
 				<?php } ?>					
@@ -109,7 +114,7 @@ $querysewa = mysqli_query($koneksidb,$sqlsewa);
 				<tfoot>
 				<?php
 					echo '<tr>';
-					echo '<th colspan="4" class="text-center">Total Pemasukan</th>';
+					echo '<th colspan="6" class="text-center">Total Pemasukan</th>';
 					echo '<th class="text-center">'. format_rupiah($pemasukan) .'</th>';
 					echo '</tr>';
 				?>

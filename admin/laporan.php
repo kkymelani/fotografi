@@ -107,7 +107,10 @@ function valid()
 								$selesai = $_GET['akhir'];
 								$stt	 = "Sudah Dibayar";
 								$stt1	 = "Selesai";
-								$sqlsewa = "SELECT * FROM transaksi WHERE stt_trx='$stt' OR stt_trx='$stt1' AND tgl_bayar BETWEEN '$mulai' AND '$selesai'";
+								$sqlsewa = "SELECT transaksi.*,paket.*,member.* FROM transaksi, member, paket
+											WHERE (transaksi.email = member.email AND transaksi.id_paket = paket.id_paket)
+											AND (transaksi.stt_trx='$stt' OR transaksi.stt_trx='$stt1') AND (transaksi.tgl_bayar BETWEEN '$mulai' AND '$selesai')
+											ORDER BY member.nama_user ASC";
 								$querysewa = mysqli_query($koneksidb,$sqlsewa);
 							?>
 						<!-- Zero Configuration Table -->
@@ -120,8 +123,10 @@ function valid()
 										<tr>
 											<th>No</th>
 											<th>Kode Booking</th>
-											<th>Tanggal Booking</th>
+											<th>Nama Member</th>
+											<th>Tanggal Transaksi</th>
 											<th>Tanggal Bayar</th>
+											<th>Nama Package</th>
 											<th>Total</th>
 										</tr>
 									</thead>
@@ -140,8 +145,10 @@ function valid()
 											<td>
 												<a href="#myModal" data-toggle="modal" data-load-code="<?php echo $result['id_trx']; ?>" data-remote-target="#myModal .modal-body"><?php echo $result['id_trx'];?></a>
 											</td>
+											<td><?php echo htmlentities($result['nama_user']);?></td>
 											<td><?php echo IndonesiaTgl(htmlentities($result['tgl_trx']));?></td>
 											<td><?php echo IndonesiaTgl(htmlentities($result['tgl_bayar']));?></td>
+											<td><?php echo htmlentities($result['nama_paket']);?></td>
 											<td><?php echo format_rupiah($res['harga']);?></td>
 										</tr>
 							<?php } 
