@@ -48,7 +48,7 @@ if(isset($_POST['updateprofile'])){
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/favicon-icon/apple-touch-icon-114-precomposed.html">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/favicon-icon/apple-touch-icon-72-precomposed.png">
 <link rel="apple-touch-icon-precomposed" href="assets/images/favicon-icon/apple-touch-icon-57-precomposed.png">
-<link rel="shortcut icon" href="admin/img/fav.png">
+<link rel="shortcut icon" href="admin/img/secondlogo1.png">
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> 
  <style>
     .errorWrap {
@@ -84,10 +84,6 @@ function checkLetter(theform)
 
 </head>
 <body>
-
-<!-- Start Switcher -->
-<?php include('includes/colorswitcher.php');?>
-<!-- /Switcher -->  
         
 <!--Header-->
 <?php include('includes/header.php');?>
@@ -147,7 +143,7 @@ while($result=mysqli_fetch_array($query)){
 <!--/Login-Form --> 
 
 <!--Register-Form -->
-<?php include('includes/registration.php');?>
+<?php include('includes/regist.php');?>
 
 <!--/Register-Form --> 
 

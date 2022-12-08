@@ -26,7 +26,7 @@ $tglhasil = date("Y-m-d",$tgl);
 
 	<title>Cetak Detail Booking</title>
 
-	<link href="admin/img/fav.png" rel="icon" type="images/x-icon">
+	<link href="admin/img/secondlogo1.png" rel="icon" type="images/x-icon">
 
 	<!-- Bootstrap Core CSS -->
 	<link href="assets/new/bootstrap.min.css" rel="stylesheet">
