@@ -96,7 +96,7 @@ if(isset($_POST['submit'])){
 											</div>
 									</div>
 									<div class="form-group">
-										<label class="col-sm-4 control-label"> Telepon </label>
+										<label class="col-sm-4 control-label">Whatsapp</label>
 											<div class="col-sm-8">
 												<input type="number" class="form-control" value="<?php echo htmlentities($result['telp_kami']);?>" name="contactno" id="contactno" required>
 											</div>

@@ -91,7 +91,7 @@ function checkLetter(theform)
                   <input type="number" class="form-control" name="mobileno" placeholder="Nomer Telepon" minlength="10" maxlength="15" required="required">
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" name="emailid" id="emailid" onBlur="checkAvailability()" placeholder="Alamat Email" required="required">
+                  <input type="email" class="form-control" name="emailid" id="emailid" onBlur="checkAvailability()" placeholder="Email" required="required">
                    <span id="user-availability-status" style="font-size:12px;"></span> 
                 </div>
                 <div class="form-group">
@@ -134,7 +134,7 @@ function checkLetter(theform)
 <!--/Login-Form --> 
 
 <!--Register-Form -->
-<?php include('includes/regist.php');?>
+<?php include('includes/registration.php');?>
 
 <!--/Register-Form --> 
 
