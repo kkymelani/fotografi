@@ -675,7 +675,6 @@ table thead th, table thead td {
 }
 .section-padding {
   padding: 110px 0;
-  background-color: #eeeeee;
 }
 .section-header {
   padding-bottom: 55px;
@@ -907,7 +906,6 @@ table thead th, table thead td {
 	margin:0px;
 }
 .user_login ul li {
-  background-color: #000;
   line-height: 17px;
   list-style: outside none none;
   margin: 0;

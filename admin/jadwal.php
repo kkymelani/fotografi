@@ -19,7 +19,7 @@ else{
 	<meta name="theme-color" content="#3e454c">
 	
 	<title><?php echo $pagedesc;?></title>
-	<link rel="shortcut icon" href="img/fav.png">
+	<link rel="shortcut icon" href="img/secondlogo1.png">
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">

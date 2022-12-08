@@ -20,7 +20,7 @@ else{
 	<meta name="theme-color" content="#3e454c">
 	
 	<title><?php echo $pagedesc;?></title>
-	<link rel="shortcut icon" href="img/fav.png">
+	<link rel="shortcut icon" href="img/secondlogo1.png">
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -59,7 +59,7 @@ else{
 
 									<div class="col-md-4">
 										<div class="panel panel-default">
-											<div class="panel-body bk-info text-light">
+											<div class="panel-body bk-info text-light" style="background:#7f8487">
 												<div class="stat-panel text-center">
 												<?php 
 												$sqlbayar = "SELECT id_trx FROM transaksi WHERE stt_trx='Menunggu Pembayaran'";
@@ -76,7 +76,7 @@ else{
 									
 									<div class="col-md-4">
 										<div class="panel panel-default">
-											<div class="panel-body bk-success text-light">
+											<div class="panel-body bk-success text-light" style="background:#363636">
 												<div class="stat-panel text-center">
 												<?php 
 												$sqlkonfir = "SELECT id_trx FROM transaksi WHERE stt_trx='Menunggu Konfirmasi'";
@@ -93,7 +93,7 @@ else{
 									
 									<div class="col-md-4">
 										<div class="panel panel-default">
-											<div class="panel-body bk-warning text-light">
+											<div class="panel-body bk-warning text-light" style="background:#434242">
 												<div class="stat-panel text-center">
 												<?php 
 												$now = date('Y-m-d');

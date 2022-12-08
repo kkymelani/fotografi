@@ -11,7 +11,7 @@ include('../includes/config.php');
 	<meta name="author" content="">
 	
 	<title><?php echo $pagedesc;?></title>
-	<link rel="shortcut icon" href="img/fav.png">
+	<link rel="shortcut icon" href="img/secondlogo1.png">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">

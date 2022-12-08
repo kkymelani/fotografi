@@ -21,7 +21,7 @@ $querysewa = mysqli_query($koneksidb,$sqlsewa);
 
 	<title><?php echo $pagedesc;?></title>
 	
-	<link href="img/fav.png" rel="icon" type="images/x-icon">
+	<link href="img/secondlogo1.png" rel="icon" type="images/x-icon">
 
 	<!-- Bootstrap Core CSS -->
 	<link href="../assets/new/bootstrap.min.css" rel="stylesheet">

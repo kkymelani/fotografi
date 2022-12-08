@@ -28,7 +28,7 @@ if(mysqli_num_rows($query)>0){
 	<meta name="author" content="">
 	
 	<title><?php echo $pagedesc;?></title>
-	<link rel="shortcut icon" href="img/logo/black.png">
+	<link rel="shortcut icon" href="img/secondlogo1.png">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
