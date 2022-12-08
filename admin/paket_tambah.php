@@ -54,15 +54,15 @@ function valid(theform){
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-12">
-						<h2 class="page-title">Tambah Data Paket</h2>
+						<h2 class="page-title">Add Package</h2>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="panel panel-default">
-									<div class="panel-heading">Form Tambah Data Paket</div>
+									<div class="panel-heading">Form Add Package</div>
 								<div class="panel-body">
 									<form method="post" name="theform" action="paket_add.php" class="form-horizontal" onsubmit="return valid(this);" enctype="multipart/form-data">
 									<div class="form-group">
-										<label class="col-sm-2 control-label">Nama Paket<span style="color:red">*</span></label>
+										<label class="col-sm-2 control-label">Nama Package<span style="color:red">*</span></label>
 										<div class="col-sm-4">
 											<input type="text" name="nama" class="form-control" required>
 										</div>
@@ -77,7 +77,7 @@ function valid(theform){
 									</div>
 
 									<div class="form-group">
-										<label class="col-sm-2 control-label">Harga /Packs<span style="color:red">*</span></label>
+										<label class="col-sm-2 control-label">Harga /pack<span style="color:red">*</span></label>
 										<div class="col-sm-4">
 											<input type="number" min="0" name="harga" class="form-control" required>
 										</div>
@@ -104,8 +104,8 @@ function valid(theform){
 									<div class="form-group">
 										<div class="col-sm-3">
 											<div class="checkbox checkbox-inline">
-												<button class="btn btn-primary" type="submit">Simpan</button>
-												<a href="paket.php" class="btn btn-default">Batal</a>
+												<button class="btn btn-primary" type="submit">Save</button>
+												<a href="paket.php" class="btn btn-default">Cancel</a>
 											</div>
 										</div>
 									</div>
